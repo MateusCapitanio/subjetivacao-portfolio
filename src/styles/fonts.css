@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'Tilt Prism', cursive;
+  src: url('../fonts/TiltPrism-Regular.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Oswald', sans-serif;
+  src: url('../fonts/Oswald-Regular.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Roboto', sans-serif;
+  src: url('../fonts/Roboto-Regular.ttf') format('ttf');
+}
