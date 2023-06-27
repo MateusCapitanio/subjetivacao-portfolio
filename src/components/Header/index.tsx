@@ -1,6 +1,7 @@
 import React from 'react';
 import { BsWhatsapp } from 'react-icons/bs';
 import { AiFillLinkedin, AiOutlineInstagram } from 'react-icons/ai';
+import Link from 'next/link';
 
 export const Header = () => {
   return (
@@ -9,9 +10,9 @@ export const Header = () => {
         <span className="font-bold text-lg">Renata Aragão</span>
         <ul className="flex gap-14">
           <div className="flex gap-2 items-center">
-            <li><a className="text-[#333333] hover:bg-[#F7D1D1] hover:text-[#333333] py-1 px-2 rounded transition duration-500" href="#">Tratamentos</a></li>
-            <li><a className="text-[#333333] hover:bg-[#F7D1D1] hover:text-[#333333] py-1 px-2 rounded transition duration-500" href="#">Serviços</a></li>
-            <li><a className="text-[#333333] hover:bg-[#F7D1D1] hover:text-[#333333] py-1 px-2 rounded transition duration-500" href="#">Para empresas</a></li>
+            <li><Link rel='noreferrer' className="text-[#333333] hover:bg-[#F7D1D1] hover:text-[#333333] py-1 px-2 rounded transition duration-500" href="#">Tratamentos</Link></li>
+            <li><Link rel='noreferrer' className="text-[#333333] hover:bg-[#F7D1D1] hover:text-[#333333] py-1 px-2 rounded transition duration-500" href="#">Serviços</Link></li>
+            <li><Link rel='noreferrer' className="text-[#333333] hover:bg-[#F7D1D1] hover:text-[#333333] py-1 px-2 rounded transition duration-500" href="#">Para empresas</Link></li>
           </div>
           <div className="flex gap-2 items-center">
             <li>
