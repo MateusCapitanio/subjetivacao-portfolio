@@ -1,3 +1,4 @@
+import React from 'react';
 import { BsWhatsapp } from 'react-icons/bs';
 import { AiFillLinkedin, AiOutlineInstagram } from 'react-icons/ai';
 
