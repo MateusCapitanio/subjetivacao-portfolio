@@ -1,14 +1,23 @@
-import React from 'react';
+"use client"
+import { useState } from 'react';
 import { BsWhatsapp } from 'react-icons/bs';
 import { AiFillLinkedin, AiOutlineInstagram } from 'react-icons/ai';
+import { TbMenu } from 'react-icons/tb'
 import Link from 'next/link';
+import MobileHeader from './MobileHeader'
 
 export const Header = () => {
+
+
   return (
-    <div className='flex justify-center'>
-      <header className="flex justify-between fixed bg-white drop-shadow-lg py-5 px-4 mt-10 w-full max-w-7xl rounded-lg">
-        <span className="font-bold text-lg">Renata Aragão</span>
-        <ul className="flex gap-14">
+    <>
+      <div className='flex justify-center'>
+      
+        <header className="flex justify-between fixed bg-white drop-shadow-lg py-5 px-4 lg:mt-10 mt-5 lg:w-full w-11/12 max-w-7xl rounded-lg ">
+          <span className="font-bold text-lg">Renata Aragão</span>
+          <MobileHeader/>
+    
+          {/* <ul className="flex gap-14">
           <div className="flex gap-2 items-center">
             <li><Link rel='noreferrer' className="text-[#333333] hover:bg-[#F7D1D1] hover:text-[#333333] py-1 px-2 rounded transition duration-500" href="#">Tratamentos</Link></li>
             <li><Link rel='noreferrer' className="text-[#333333] hover:bg-[#F7D1D1] hover:text-[#333333] py-1 px-2 rounded transition duration-500" href="#">Serviços</Link></li>
@@ -47,9 +56,10 @@ export const Header = () => {
               </Link>
             </li>
           </div>
-        </ul>
-      </header>
-    </div>
+        </ul> */}
+        </header>
+      </div>
+    </>
   )
 }
 
