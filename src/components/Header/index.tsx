@@ -6,6 +6,7 @@ import { TbMenu } from 'react-icons/tb'
 import Link from 'next/link';
 import MobileHeader from './MobileHeader'
 import { getWidth } from '@/utils/getWidth';
+import HeaderExample from '../HeaderExample';
 
 export const Header = () => {
   const [showMobileHeader, setShowMobileHeader] = useState<boolean>();
@@ -21,8 +22,8 @@ export const Header = () => {
   return (
     <>
       <div className='flex justify-center'>
-
-        <header className="flex justify-between fixed bg-white drop-shadow-lg py-5 px-4 lg:mt-10 mt-5 lg:w-full w-11/12 max-w-7xl rounded-lg ">
+        {showMobileHeader ? <HeaderExample /> : (
+          <header className="flex justify-between fixed bg-white drop-shadow-lg py-5 px-4 lg:mt-10 mt-5 lg:w-full w-11/12 max-w-7xl rounded-lg ">
           <span className="font-bold text-lg">Renata Aragão</span>
           {showMobileHeader ? <MobileHeader /> : (
             <ul className="flex gap-14">
@@ -70,6 +71,9 @@ export const Header = () => {
 
 
         </header>
+        )}
+
+        
       </div>
     </>
   )
